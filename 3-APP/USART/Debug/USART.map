@@ -1,0 +1,488 @@
+Archive member included because of file (symbol)
+
+e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./USART_program.o (__do_copy_data)
+e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./USART_program.o (__do_clear_bss)
+e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strcmp.o)
+                              ./main.o (strcmp)
+
+Allocating common symbols
+Common symbol       size              file
+
+Local_u8String      0x5               ./main.o
+Local_u8Buffer      0x4               ./main.o
+Local_u8Data        0x2               ./main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./DIO_program.o
+LOAD ./GIE_program.o
+LOAD ./PORT_program.o
+LOAD ./USART_program.o
+LOAD ./main.o
+LOAD e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xf58
+ *(.vectors)
+ .vectors       0x00000000       0x54 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x8 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008e        0x4 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x0000008e                __vector_1
+                0x0000008e                __vector_12
+                0x0000008e                __bad_interrupt
+                0x0000008e                __vector_6
+                0x0000008e                __vector_3
+                0x0000008e                __vector_11
+                0x0000008e                __vector_17
+                0x0000008e                __vector_19
+                0x0000008e                __vector_7
+                0x0000008e                __vector_5
+                0x0000008e                __vector_4
+                0x0000008e                __vector_9
+                0x0000008e                __vector_2
+                0x0000008e                __vector_8
+                0x0000008e                __vector_10
+                0x0000008e                __vector_16
+                0x0000008e                __vector_18
+                0x0000008e                __vector_20
+ .text          0x00000092        0x0 ./DIO_program.o
+ .text          0x00000092        0x0 ./GIE_program.o
+ .text          0x00000092        0x0 ./PORT_program.o
+ .text          0x00000092        0x0 ./USART_program.o
+ .text          0x00000092        0x0 ./main.o
+ .text          0x00000092        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000092        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000092        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000092        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strcmp.o)
+                0x00000092                . = ALIGN (0x2)
+ *(.text.*)
+ .text.DIO_u8SetPinValue
+                0x00000092      0x224 ./DIO_program.o
+                0x00000092                DIO_u8SetPinValue
+ .text.DIO_u8SetPortValue
+                0x000002b6       0x90 ./DIO_program.o
+                0x000002b6                DIO_u8SetPortValue
+ .text.DIO_u8GetPinValue
+                0x00000346      0x130 ./DIO_program.o
+                0x00000346                DIO_u8GetPinValue
+ .text.DIO_u8GetPortValue
+                0x00000476       0xa4 ./DIO_program.o
+                0x00000476                DIO_u8GetPortValue
+ .text.DIO_u8TogglePinValue
+                0x0000051a      0x116 ./DIO_program.o
+                0x0000051a                DIO_u8TogglePinValue
+ .text.GIE_voidEnable
+                0x00000630       0x1c ./GIE_program.o
+                0x00000630                GIE_voidEnable
+ .text.GIE_voidDisable
+                0x0000064c       0x1c ./GIE_program.o
+                0x0000064c                GIE_voidDisable
+ .text.PORT_voidInit
+                0x00000668       0x42 ./PORT_program.o
+                0x00000668                PORT_voidInit
+ .text.USART_voidInit
+                0x000006aa       0xbe ./USART_program.o
+                0x000006aa                USART_voidInit
+ .text.USART_u8SendCharSynch
+                0x00000768       0xbe ./USART_program.o
+                0x00000768                USART_u8SendCharSynch
+ .text.USART_u8SendCharAsynch
+                0x00000826       0x84 ./USART_program.o
+                0x00000826                USART_u8SendCharAsynch
+ .text.USART_u8SendStringSynch
+                0x000008aa       0x6c ./USART_program.o
+                0x000008aa                USART_u8SendStringSynch
+ .text.USART_u8SendStringAsynch
+                0x00000916       0x7e ./USART_program.o
+                0x00000916                USART_u8SendStringAsynch
+ .text.USART_u8ReceiveCharSynch
+                0x00000994       0xca ./USART_program.o
+                0x00000994                USART_u8ReceiveCharSynch
+ .text.USART_u8ReceiveCharAsynch
+                0x00000a5e       0x7e ./USART_program.o
+                0x00000a5e                USART_u8ReceiveCharAsynch
+ .text.USART_u8ReceiveBufferSynch
+                0x00000adc       0x68 ./USART_program.o
+                0x00000adc                USART_u8ReceiveBufferSynch
+ .text.USART_u8ReceiveBufferAsynch
+                0x00000b44       0x88 ./USART_program.o
+                0x00000b44                USART_u8ReceiveBufferAsynch
+ .text.__vector_13
+                0x00000bcc       0xf6 ./USART_program.o
+                0x00000bcc                __vector_13
+ .text.__vector_14
+                0x00000cc2       0xe4 ./USART_program.o
+                0x00000cc2                __vector_14
+ .text.__vector_15
+                0x00000da6       0x76 ./USART_program.o
+                0x00000da6                __vector_15
+ .text.main     0x00000e1c       0x28 ./main.o
+                0x00000e1c                main
+ .text.LOL      0x00000e44       0xa6 ./main.o
+                0x00000e44                LOL
+ .text.LMAO     0x00000eea       0x18 ./main.o
+                0x00000eea                LMAO
+ .text.LMFAO    0x00000f02       0x40 ./main.o
+                0x00000f02                LMFAO
+ .text.libgcc   0x00000f42        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000f42        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000f42        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.avr-libc
+                0x00000f42       0x12 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strcmp.o)
+                0x00000f42                strcmp
+                0x00000f54                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000f54        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00000f54                exit
+                0x00000f54                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000f54        0x4 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000f58                _etext = .
+
+.data           0x00800060        0xc load address 0x00000f58
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./DIO_program.o
+ .data          0x00800060        0x0 ./GIE_program.o
+ .data          0x00800060        0x0 ./PORT_program.o
+ .data          0x00800060        0x0 ./USART_program.o
+ .data          0x00800060        0x0 ./main.o
+ .data          0x00800060        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800060        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00800060        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strcmp.o)
+ *(.data*)
+ .data.USART_u8State
+                0x00800060        0x1 ./USART_program.o
+ .data.Comp1    0x00800061        0x5 ./main.o
+                0x00800061                Comp1
+ .data.Comp2    0x00800066        0x5 ./main.o
+                0x00800066                Comp2
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x0080006c                . = ALIGN (0x2)
+ *fill*         0x0080006b        0x1 00
+                0x0080006c                _edata = .
+                0x0080006c                PROVIDE (__data_end, .)
+
+.bss            0x0080006c       0x1f
+                0x0080006c                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0080006c        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x0080006c        0x0 ./DIO_program.o
+ .bss           0x0080006c        0x0 ./GIE_program.o
+ .bss           0x0080006c        0x0 ./PORT_program.o
+ .bss           0x0080006c        0x0 ./USART_program.o
+ .bss           0x0080006c        0x0 ./main.o
+ .bss           0x0080006c        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x0080006c        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x0080006c        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x0080006c        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strcmp.o)
+ *(.bss*)
+ .bss.Local_u8Counter.1470
+                0x0080006c        0x1 ./USART_program.o
+ .bss.Local_u8Counter.1531
+                0x0080006d        0x1 ./USART_program.o
+ .bss.USART_u8TransmissionState
+                0x0080006e        0x1 ./USART_program.o
+ .bss.USART_u16TransmittedData
+                0x0080006f        0x2 ./USART_program.o
+ .bss.USART_pchTransmittedString
+                0x00800071        0x2 ./USART_program.o
+ .bss.USART_pu16ReceivedData
+                0x00800073        0x2 ./USART_program.o
+ .bss.USART_pu8ReceivedBuffer
+                0x00800075        0x2 ./USART_program.o
+ .bss.USART_u8ReceivedBufferSize
+                0x00800077        0x1 ./USART_program.o
+ .bss.TXC_pvNotifFunc
+                0x00800078        0x2 ./USART_program.o
+ .bss.RXC_pvNotifFunc
+                0x0080007a        0x2 ./USART_program.o
+ .bss.UDRE_pvNotifFunc
+                0x0080007c        0x2 ./USART_program.o
+ .bss.Local_u8Status
+                0x0080007e        0x2 ./main.o
+                0x0080007e                Local_u8Status
+ *(COMMON)
+ COMMON         0x00800080        0xb ./main.o
+                0x00800080                Local_u8String
+                0x00800085                Local_u8Buffer
+                0x00800089                Local_u8Data
+                0x0080008b                PROVIDE (__bss_end, .)
+                0x00000f58                __data_load_start = LOADADDR (.data)
+                0x00000f64                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080008b        0x0
+                0x0080008b                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0080008b                PROVIDE (__noinit_end, .)
+                0x0080008b                _end = .
+                0x0080008b                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x17e8
+ *(.stab)
+ .stab          0x00000000      0x5f4 ./DIO_program.o
+ .stab          0x000005f4      0x144 ./GIE_program.o
+                                0x1c8 (size before relaxing)
+ .stab          0x00000738      0x168 ./PORT_program.o
+                                0x1ec (size before relaxing)
+ .stab          0x000008a0      0xc30 ./USART_program.o
+                                0xcb4 (size before relaxing)
+ .stab          0x000014d0      0x318 ./main.o
+                                0x39c (size before relaxing)
+
+.stabstr        0x00000000      0xa62
+ *(.stabstr)
+ .stabstr       0x00000000      0xa62 ./DIO_program.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(USART.elf elf32-avr)
+LOAD linker stubs

@@ -1,0 +1,8 @@
+MATH_HELPER.o MATH_HELPER.o: ../MATH_HELPER.c ../STD_TYPES.h \
+  ../BIT_MATH.h ../MATH_HELPER.h
+
+../STD_TYPES.h:
+
+../BIT_MATH.h:
+
+../MATH_HELPER.h:

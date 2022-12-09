@@ -1,0 +1,54 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../ADC_program.c \
+../APP_program.c \
+../CLCD_program.c \
+../DCM_program.c \
+../DIO_program.c \
+../KPD_program.c \
+../MATH_HELPER.c \
+../PORT_program.c \
+../STPR_program.c \
+../TIMER_program.c \
+../main.c 
+
+OBJS += \
+./ADC_program.o \
+./APP_program.o \
+./CLCD_program.o \
+./DCM_program.o \
+./DIO_program.o \
+./KPD_program.o \
+./MATH_HELPER.o \
+./PORT_program.o \
+./STPR_program.o \
+./TIMER_program.o \
+./main.o 
+
+C_DEPS += \
+./ADC_program.d \
+./APP_program.d \
+./CLCD_program.d \
+./DCM_program.d \
+./DIO_program.d \
+./KPD_program.d \
+./MATH_HELPER.d \
+./PORT_program.d \
+./STPR_program.d \
+./TIMER_program.d \
+./main.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+%.o: ../%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: AVR Compiler'
+	avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

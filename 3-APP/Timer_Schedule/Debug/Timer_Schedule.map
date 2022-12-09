@@ -1,0 +1,542 @@
+Archive member included because of file (symbol)
+
+e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                              ./MATH_HELPER.o (__mulsi3)
+e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                              ./TIMER_program.o (__udivmodhi4)
+e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                              ./TIMER_program.o (__udivmodsi4)
+e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                              ./MATH_HELPER.o (__divmodsi4)
+e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./TIMER_program.o (__do_copy_data)
+e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./TIMER_program.o (__do_clear_bss)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./DIO_program.o
+LOAD ./GIE_program.o
+LOAD ./MATH_HELPER.o
+LOAD ./PORT_program.o
+LOAD ./SERVO_program.o
+LOAD ./TIMER_program.o
+LOAD ./main.o
+LOAD e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x2334
+ *(.vectors)
+ .vectors       0x00000000       0x54 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x8 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008e        0x4 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x0000008e                __vector_1
+                0x0000008e                __vector_12
+                0x0000008e                __bad_interrupt
+                0x0000008e                __vector_3
+                0x0000008e                __vector_13
+                0x0000008e                __vector_17
+                0x0000008e                __vector_19
+                0x0000008e                __vector_2
+                0x0000008e                __vector_15
+                0x0000008e                __vector_14
+                0x0000008e                __vector_16
+                0x0000008e                __vector_18
+                0x0000008e                __vector_20
+ .text          0x00000092        0x0 ./DIO_program.o
+ .text          0x00000092        0x0 ./GIE_program.o
+ .text          0x00000092        0x0 ./MATH_HELPER.o
+ .text          0x00000092        0x0 ./PORT_program.o
+ .text          0x00000092        0x0 ./SERVO_program.o
+ .text          0x00000092        0x0 ./TIMER_program.o
+ .text          0x00000092        0x0 ./main.o
+ .text          0x00000092        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .text          0x00000092        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x00000092        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00000092        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .text          0x00000092        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000092        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000092        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000092                . = ALIGN (0x2)
+ *(.text.*)
+ .text.DIO_u8SetPinValue
+                0x00000092      0x224 ./DIO_program.o
+                0x00000092                DIO_u8SetPinValue
+ .text.DIO_u8SetPortValue
+                0x000002b6       0x90 ./DIO_program.o
+                0x000002b6                DIO_u8SetPortValue
+ .text.DIO_u8GetPinValue
+                0x00000346      0x130 ./DIO_program.o
+                0x00000346                DIO_u8GetPinValue
+ .text.DIO_u8GetPortValue
+                0x00000476       0xa4 ./DIO_program.o
+                0x00000476                DIO_u8GetPortValue
+ .text.GIE_voidEnable
+                0x0000051a       0x1c ./GIE_program.o
+                0x0000051a                GIE_voidEnable
+ .text.GIE_voidDisable
+                0x00000536       0x1c ./GIE_program.o
+                0x00000536                GIE_voidDisable
+ .text.MATH_u32Power
+                0x00000552       0xb0 ./MATH_HELPER.o
+                0x00000552                MATH_u32Power
+ .text.MATH_s32Map
+                0x00000602       0xf2 ./MATH_HELPER.o
+                0x00000602                MATH_s32Map
+ .text.PORT_voidInit
+                0x000006f4       0x46 ./PORT_program.o
+                0x000006f4                PORT_voidInit
+ .text.SERVO_u8Rotate
+                0x0000073a       0xd0 ./SERVO_program.o
+                0x0000073a                SERVO_u8Rotate
+ .text.TIMER2_voidScheduleFunc
+                0x0000080a       0x9a ./TIMER_program.o
+ .text.TIMER_u8SetTimerVal
+                0x000008a4       0x9a ./TIMER_program.o
+                0x000008a4                TIMER_u8SetTimerVal
+ .text.TIMER_u8GetTimerVal
+                0x0000093e       0x8e ./TIMER_program.o
+                0x0000093e                TIMER_u8GetTimerVal
+ .text.TIMER_u8SetCompMatch
+                0x000009cc       0xc0 ./TIMER_program.o
+                0x000009cc                TIMER_u8SetCompMatch
+ .text.TIMER_u8SetIntStatus
+                0x00000a8c      0x21e ./TIMER_program.o
+                0x00000a8c                TIMER_u8SetIntStatus
+ .text.TIMER0_u8Init
+                0x00000caa      0x19a ./TIMER_program.o
+                0x00000caa                TIMER0_u8Init
+ .text.TIMER0_delay_ms
+                0x00000e44      0x150 ./TIMER_program.o
+                0x00000e44                TIMER0_delay_ms
+ .text.TIMER1_u8Init
+                0x00000f94      0x55a ./TIMER_program.o
+                0x00000f94                TIMER1_u8Init
+ .text.TIMER1_voidSetTopValue
+                0x000014ee       0x24 ./TIMER_program.o
+                0x000014ee                TIMER1_voidSetTopValue
+ .text.TIMER1_u8PWMGenerate
+                0x00001512      0x17c ./TIMER_program.o
+                0x00001512                TIMER1_u8PWMGenerate
+ .text.TIMER2_u8Init
+                0x0000168e      0x19a ./TIMER_program.o
+                0x0000168e                TIMER2_u8Init
+ .text.TIMER2_delay_ms
+                0x00001828      0x14c ./TIMER_program.o
+                0x00001828                TIMER2_delay_ms
+ .text.TIMER2_delay_us
+                0x00001974      0x152 ./TIMER_program.o
+                0x00001974                TIMER2_delay_us
+ .text.TIMER2_u8PWMGenerate
+                0x00001ac6       0xe2 ./TIMER_program.o
+                0x00001ac6                TIMER2_u8PWMGenerate
+ .text.TIMER2_u8Schedule
+                0x00001ba8      0x11a ./TIMER_program.o
+                0x00001ba8                TIMER2_u8Schedule
+ .text.ICU_u8Init
+                0x00001cc2       0x80 ./TIMER_program.o
+                0x00001cc2                ICU_u8Init
+ .text.ICU_u8SetEdge
+                0x00001d42       0x4a ./TIMER_program.o
+                0x00001d42                ICU_u8SetEdge
+ .text.ICU_u16ReadInputCapture
+                0x00001d8c       0x16 ./TIMER_program.o
+                0x00001d8c                ICU_u16ReadInputCapture
+ .text.TIMER_u8SetCallBack
+                0x00001da2       0x4a ./TIMER_program.o
+                0x00001da2                TIMER_u8SetCallBack
+ .text.__vector_4
+                0x00001dec       0x66 ./TIMER_program.o
+                0x00001dec                __vector_4
+ .text.__vector_5
+                0x00001e52       0x66 ./TIMER_program.o
+                0x00001e52                __vector_5
+ .text.__vector_6
+                0x00001eb8       0x66 ./TIMER_program.o
+                0x00001eb8                __vector_6
+ .text.__vector_7
+                0x00001f1e       0x66 ./TIMER_program.o
+                0x00001f1e                __vector_7
+ .text.__vector_8
+                0x00001f84       0x66 ./TIMER_program.o
+                0x00001f84                __vector_8
+ .text.__vector_9
+                0x00001fea       0x66 ./TIMER_program.o
+                0x00001fea                __vector_9
+ .text.__vector_10
+                0x00002050       0x66 ./TIMER_program.o
+                0x00002050                __vector_10
+ .text.__vector_11
+                0x000020b6       0x66 ./TIMER_program.o
+                0x000020b6                __vector_11
+ .text.main     0x0000211c       0xf6 ./main.o
+                0x0000211c                main
+ .text.LedBlink
+                0x00002212       0x3e ./main.o
+                0x00002212                LedBlink
+ .text.libgcc   0x00002250       0x3e e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                0x00002250                __mulsi3
+ .text.libgcc   0x0000228e       0x28 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x0000228e                __udivmodhi4
+ .text.libgcc   0x000022b6       0x44 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x000022b6                __udivmodsi4
+ .text.libgcc   0x000022fa       0x36 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                0x000022fa                __divmodsi4
+ .text.libgcc   0x00002330        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00002330        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00002330        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00002330                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00002330        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00002330                exit
+                0x00002330                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00002330        0x4 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00002334                _etext = .
+
+.data           0x00800060       0x1a load address 0x00002334
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./DIO_program.o
+ .data          0x00800060        0x0 ./GIE_program.o
+ .data          0x00800060        0x0 ./MATH_HELPER.o
+ .data          0x00800060        0x0 ./PORT_program.o
+ .data          0x00800060        0x0 ./SERVO_program.o
+ .data          0x00800060        0x0 ./TIMER_program.o
+ .data          0x00800060        0x0 ./main.o
+ .data          0x00800060        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .data          0x00800060        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x00800060        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00800060        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .data          0x00800060        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800060        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.C.7.1586
+                0x00800060        0x5 ./TIMER_program.o
+ .rodata.C.8.2184
+                0x00800065        0x5 ./TIMER_program.o
+ .rodata.C.9.2225
+                0x0080006a        0x5 ./TIMER_program.o
+ .rodata.C.10.2285
+                0x0080006f        0x5 ./TIMER_program.o
+ .rodata.C.0.1291
+                0x00800074        0x5 ./main.o
+ *(.gnu.linkonce.d*)
+                0x0080007a                . = ALIGN (0x2)
+ *fill*         0x00800079        0x1 00
+                0x0080007a                _edata = .
+                0x0080007a                PROVIDE (__data_end, .)
+
+.bss            0x0080007a       0x1c
+                0x0080007a                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0080007a        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x0080007a        0x0 ./DIO_program.o
+ .bss           0x0080007a        0x0 ./GIE_program.o
+ .bss           0x0080007a        0x0 ./MATH_HELPER.o
+ .bss           0x0080007a        0x0 ./PORT_program.o
+ .bss           0x0080007a        0x0 ./SERVO_program.o
+ .bss           0x0080007a        0x0 ./TIMER_program.o
+ .bss           0x0080007a        0x0 ./main.o
+ .bss           0x0080007a        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .bss           0x0080007a        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x0080007a        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x0080007a        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .bss           0x0080007a        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x0080007a        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x0080007a        0x0 e:/embedded_systems/00_imt_avr_diploma/00-tools/01-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ .bss.TIMERS_pvCallBackFunc
+                0x0080007a       0x10 ./TIMER_program.o
+ .bss.TIMER2_pvScheduleFunc
+                0x0080008a        0x2 ./TIMER_program.o
+ .bss.Local_u32Counter.1273
+                0x0080008c        0x4 ./TIMER_program.o
+ .bss.TIMER_u32ScheduleCompMatchCount
+                0x00800090        0x4 ./TIMER_program.o
+ .bss.TIMER_u8ScheduleRepeatability
+                0x00800094        0x1 ./TIMER_program.o
+ .bss.Local_u8State.1296
+                0x00800095        0x1 ./main.o
+ *(COMMON)
+                0x00800096                PROVIDE (__bss_end, .)
+                0x00002334                __data_load_start = LOADADDR (.data)
+                0x0000234e                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800096        0x0
+                0x00800096                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800096                PROVIDE (__noinit_end, .)
+                0x00800096                _end = .
+                0x00800096                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x2964
+ *(.stab)
+ .stab          0x00000000      0x51c ./DIO_program.o
+ .stab          0x0000051c      0x144 ./GIE_program.o
+                                0x1c8 (size before relaxing)
+ .stab          0x00000660      0x240 ./MATH_HELPER.o
+                                0x2c4 (size before relaxing)
+ .stab          0x000008a0      0x168 ./PORT_program.o
+                                0x1ec (size before relaxing)
+ .stab          0x00000a08      0x1ec ./SERVO_program.o
+                                0x270 (size before relaxing)
+ .stab          0x00000bf4     0x1aac ./TIMER_program.o
+                               0x1b6c (size before relaxing)
+ .stab          0x000026a0      0x2c4 ./main.o
+                                0x384 (size before relaxing)
+
+.stabstr        0x00000000      0xd8b
+ *(.stabstr)
+ .stabstr       0x00000000      0xd8b ./DIO_program.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(Timer_Schedule.elf elf32-avr)
+LOAD linker stubs
