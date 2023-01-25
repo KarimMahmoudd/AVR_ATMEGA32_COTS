@@ -19,4 +19,5 @@ typedef long double f80;
 #define NOK  			1
 #define NULL_POINTER 	2
 #define BUSY_FUNC	 	3
+#define FUNC_TIMEOUT    4
 #endif

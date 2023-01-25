@@ -9,7 +9,6 @@
 /************************************************************************************************************************/
 
 #include "STD_TYPES.h"
-#include <util/delay.h>
 
 #include "DIO_interface.h"
 
@@ -27,6 +26,6 @@ void DCM_voidRotateCounterClockwise(){
 }
 
 void DCM_voidStop(){
-		DIO_u8SetPinValue(DCM_PORT,DCM_CLKWISE_PIN,DIO_u8PIN_LOW);
+	DIO_u8SetPinValue(DCM_PORT,DCM_CLKWISE_PIN,DIO_u8PIN_LOW);
 	DIO_u8SetPinValue(DCM_PORT,DCM_CTR_CLKWISE_PIN,DIO_u8PIN_LOW);
 }
