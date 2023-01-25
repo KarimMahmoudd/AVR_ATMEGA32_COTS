@@ -209,7 +209,7 @@ u8 EXTI_u8Int0SetCallBack(void(*Copy_pvInt0Func)(void)){
 		EXTI_pvInt0Func=Copy_pvInt0Func;
 	}
 	else{
-		Local_u8ErrorState=NULL_POINTER;
+		Local_u8ErrorState=NULL_PTR;
 	}
 
 	return Local_u8ErrorState;
@@ -221,7 +221,7 @@ u8 EXTI_u8Int1SetCallBack(void(*Copy_pvInt1Func)(void)){
 		EXTI_pvInt1Func=Copy_pvInt1Func;
 	}
 	else{
-		Local_u8ErrorState=NULL_POINTER;
+		Local_u8ErrorState=NULL_PTR;
 	}
 
 	return Local_u8ErrorState;
@@ -233,7 +233,7 @@ u8 EXTI_u8Int2SetCallBack(void(*Copy_pvInt2Func)(void)){
 		EXTI_pvInt2Func=Copy_pvInt2Func;
 	}
 	else{
-		Local_u8ErrorState=NULL_POINTER;
+		Local_u8ErrorState=NULL_PTR;
 	}
 
 	return Local_u8ErrorState;

@@ -239,6 +239,7 @@ u8 USART_u8SendCharAsynch(u16 Copy_u16Data,void (*Copy_pvNotifFunc)(void)){
 			USART_u8TransmissionState=CHAR;
 			USART_u16TransmittedData=Copy_u16Data;
 			TXC_pvNotifFunc=Copy_pvNotifFunc;
+			SET_BIT(UCSRB,UCSRB_TXCIE);
 			SET_BIT(UCSRB,UCSRB_UDRIE);
 		}
 		else{
@@ -297,7 +298,7 @@ u8 USART_u8ReceiveCharSynch(u16* Copy_pu16ReceivedData){
 				Local_u32Counter++;
 			}
 			if(Local_u32Counter==TIMEOUT){
-				Local_u8ErrorState= FUNC_TIMEOUT;
+				Local_u8ErrorState=FUNC_TIMEOUT;
 			}
 			else{
 				*Copy_pu16ReceivedData=UDR;
@@ -436,7 +437,6 @@ void __vector_14(void){
 				CLR_BIT(UCSRB,UCSRB_TXB8);
 			}
 		}
-		SET_BIT(UCSRB,UCSRB_TXCIE);
 		CLR_BIT(UCSRB,UCSRB_UDRIE);
 	}
 	else if(USART_u8TransmissionState==STRING){

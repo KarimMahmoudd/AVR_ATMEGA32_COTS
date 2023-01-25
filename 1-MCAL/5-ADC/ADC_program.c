@@ -105,13 +105,13 @@ u8 ADC_u8StartConversionSynch(u8 Copy_u8Channel,u16* Copy_pu16Reading){
 			while((GET_BIT(ADCSRA,ADCSRA_ADIF)==0) && (Local_u32Counter!=ADC_u32TIMEOUT)){
 				Local_u32Counter++;
 			}
+			//clearing the interrupt flag by writing 1
 			if(Local_u32Counter==ADC_u32TIMEOUT){
 				//loop is broken because timeout is reached
 				Local_u8ErrorState=NOK;
 			}
 			else{
-				/* flag is raised
-				clearing the interrupt flag by writing 1 */
+				//flag is raised
 				SET_BIT(ADCSRA,ADCSRA_ADIF);
 				//returning the reading
 #if ADC_RESOLUTION == 8
@@ -241,8 +241,6 @@ void __vector_16(void){
 
 		if(ADC_u8ChainIndex==ADC_psChain->Size){
 			ADC_psChain->NotiFunc();
-			// chain index reset
-			ADC_u8ChainIndex = 0;
 			//disable interrupt
 			CLR_BIT(ADCSRA,ADCSRA_ADIE);
 			//make the adc idle to work again

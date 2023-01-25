@@ -7,7 +7,7 @@
 /******************************           Date: 23/10/2022                 **********************************************/
 /************************************************************************************************************************/
 /************************************************************************************************************************/
-#include "STD_TYPES.h"
+#include "STD_TYPED.h"
 
 #include "ADC_interface.h"
 
@@ -15,6 +15,6 @@
 #include "THER_interface.h"
 #include "THER_private.h"
 u8 THER_u8GetTemperature(void){
-    u8 Local_u8DigitalValue, Local_u8Temp; u16 Local_u16MilliVoltValue;
+    u8 Local_u8DigitalValue,u8 Local_u8Temp; u16 Local_u16MilliVoltValue;
     Local_u8DigitalValue = ADC_u8GetChannelReading(THER_CHANNEL);
 }
