@@ -241,6 +241,8 @@ void __vector_16(void){
 
 		if(ADC_u8ChainIndex==ADC_psChain->Size){
 			ADC_psChain->NotiFunc();
+			// chain index reset
+			ADC_u8ChainIndex = 0;
 			//disable interrupt
 			CLR_BIT(ADCSRA,ADCSRA_ADIE);
 			//make the adc idle to work again
