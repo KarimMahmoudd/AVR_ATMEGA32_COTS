@@ -1,2 +1,2 @@
-# AVR_ATMEGA32_COTS
+# COTS
  AVR Atmega32 Software Drivers
